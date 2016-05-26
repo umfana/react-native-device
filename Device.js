@@ -1,5 +1,5 @@
 var { NativeModules, Dimensions } = require('react-native');
-var DeviceUtil = NativeModules.DeviceUtil;
+var DeviceUtil = NativeModules.DeviceUtil || { model: "Android"};
 
 class Device {
   constructor() {
